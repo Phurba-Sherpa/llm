@@ -25,6 +25,20 @@ Then edit `.env` and set `OLLAMA_*` values for your environment.
 uv run uvicorn app.main:app --reload
 ```
 
+## Formatting
+
+Install dev tools (includes Ruff formatter):
+
+```bash
+uv sync --group dev
+```
+
+Run formatter:
+
+```bash
+uv run ruff format app
+```
+
 ## Endpoints
 
 - `GET /health` - health check
